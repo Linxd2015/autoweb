@@ -16,7 +16,7 @@
 
 3、详细介绍<br>
 =
-该项目大致分为一下几大块<br>
+该项目大致分为以下几大块<br>
 -
 1）接口逻辑服务层：AutoTestService（后续也可以独立出来）<br>
 这里包含了，各种底层方法（base），运行配置（config），接口的底层逻辑（TestManage），公共方法（utility）<br>
