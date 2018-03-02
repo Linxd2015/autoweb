@@ -7,13 +7,37 @@
 =
 
 本项目是类似于自动化的管理web项目，主要因为由于公司最近在弄自动化，为了快速投入应用，就结合django的admin模块（因为admin有现成的web，自己的前端水平实在是烂写不好，就用现成的），自己写了一个架子。主要是在django的admin基础上进行二次开发，来满足我们自动化的要求。<br>
-该项目有3个功能：<br>
+该项目是数据驱动型框架，有3个功能：<br>
   1）service／api的接口自动化管理<br>
   2）执行结果图表展示<br>
   3）计划任务（持续集成）<br>
 
-该项目只有1个架子，核心的功能代码没有写，服务端接口的需要根据公司的实际情况来编写，不过如果是api可用的（即get，post等请求）
+该项目只有1个架子，核心的功能代码没有写，服务端接口的需要根据公司的实际情况来编写，不过如果是api可用的（即get，post等请求）<br>
 
+3、详细介绍<br>
+=
+该项目大致分为一下几大块<br>
+-
+1）接口逻辑服务层：AutoTestService（后续也可以独立出来）<br>
+这里包含了，各种底层方法（base），运行配置（config），接口的底层逻辑（TestManage），公共方法（utility）<br>
+
+2）各种app<br>
+api、chart、service、timetask 都是django里面的app<br>
+
+3）静态文件<br>
+media文件下<br>
+
+4）配置文件有2个：<br>
+--》AutoTestService里面有一个configSetting.py：各种映射，接口执行配置<br>
+--》autoweb里面又一个settings.py：django的配置<br>
+
+
+其他说明<br>
+-
+1、web里面调用的AutoTestService的入口都在 AutoTestService／run_main里面（相当于是AutoTestService对外暴露的接口，方便以后有分离的需求）<br>
+
+2、整体思路：主要利用的unittest + ddt。但是整合了所有接口的逻辑形成了一个统一调度接口，所以在代码只看到一个testRun方法（autoweb/AutoTestService/TestManage/WebTest/下的文件），这个方法将接口测试的逻辑统一进行了封装。数据获取->组装入参->预处理->接口调用->数据检查->数据清理->日志收集一>系列流程<br>
+通过将执行数据写入配置，然后真正执行的时候再将从配置中独取出来，然后逐一获取需要执行的接口，通过ddt去获取相应接口的数据来驱动测试<br>
 
 
 3、部署该项目的的支持<br>
@@ -24,6 +48,7 @@
 4、安装excel组件xlrd，xlwt<br>
 5、安装mysql插件mysqlDB：<br>
 6、安装yaml插件<br>
+7、安装ddt
 
 
 2、运行命令<br>
