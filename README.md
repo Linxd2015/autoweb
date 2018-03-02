@@ -28,8 +28,8 @@ api、chart、service、timetask 都是django里面的app<br>
 media文件下<br>
 
 4）配置文件有2个：<br>
---》AutoTestService里面有一个configSetting.py：各种映射，接口执行配置<br>
---》autoweb里面又一个settings.py：django的配置<br>
+--》AutoTestService里面有一个configSetting.py：新增的一个配置文件包含各种映射，接口执行配置<br>
+--》autoweb里面有一个settings.py：django自己的配置<br>
 
 
 其他说明<br>
