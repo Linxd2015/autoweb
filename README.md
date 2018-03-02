@@ -45,7 +45,7 @@ media文件下<br>
 不用维护接口逻辑，只维护接口的数据。新增、修改接口的时候，不用再去手动增加test_xxx的接口方法，只需要增加相应的测试数据即可<br>
 
 
-3、部署该项目的的支持<br>
+3、运行该项目的的支持<br>
 =
 1、安装django：pip install Django<br>
 2、安装定时插件APScheduler：pip install apscheduler<br>
