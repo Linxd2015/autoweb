@@ -2,6 +2,12 @@
 说明<br>
 =
 由于本人第一次写程序，功能比较简单，代码方面肯定有很多问题。发到github也是为了发现自己的不足，大家发现的啥问题，可以及时告诉我，我会努力改正，谢谢！<br>
+用例管理<br>
+![Alt text](https://github.com/luoranbin/autoweb/raw/master/media/remark/index.png)<br>
+图表<br>
+![Alt text](https://github.com/luoranbin/autoweb/raw/master/media/remark/chart.png)<br>
+计划任务<br>
+![Alt text](https://github.com/luoranbin/autoweb/raw/master/media/remark/plan.png)<br>
 
 2、项目简述<br>
 =
