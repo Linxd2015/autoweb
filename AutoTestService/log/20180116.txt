@@ -1,0 +1,164 @@
+2018-01-16 16:48:52 update_result处理失败。原因为:Traceback (most recent call last):
+  File "AutoTestService/base/DBController.py", line 125, in exe_update
+    rows = self.cursor.execute(sql)
+  File "/Library/Python/2.7/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1")
+
+2018-01-16 16:48:52 exe_update 执行失败，参数为:sql=delete from activity_info where id in ( 
+2018-01-16 16:48:52 create_test_data处理失败，原因为：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 97, in create_test_data
+    db.exe_update(del_sql)
+  File "AutoTestService/base/DBController.py", line 133, in exe_update
+    raise e
+ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1")
+
+2018-01-16 16:48:52 pre_options处理失败，原因为：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 854, in pre_options
+    create_test_data(str(db_info), str(db_name), str(table), str(file_path), str(create_data),str(delete_data))
+  File "AutoTestService/utility/Data.py", line 109, in create_test_data
+    raise e
+ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1")
+
+2018-01-16 16:48:52 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180116_service_Result.xls
+2018-01-16 16:49:39 update_result处理失败。原因为:Traceback (most recent call last):
+  File "AutoTestService/base/DBController.py", line 125, in exe_update
+    rows = self.cursor.execute(sql)
+  File "/Library/Python/2.7/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1")
+
+2018-01-16 16:49:39 exe_update 执行失败，参数为:sql=delete from activity_info where id in ( 
+2018-01-16 16:49:39 create_test_data处理失败，原因为：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 97, in create_test_data
+    db.exe_update(del_sql)
+  File "AutoTestService/base/DBController.py", line 133, in exe_update
+    raise e
+ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1")
+
+2018-01-16 16:49:39 pre_options处理失败，原因为：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 854, in pre_options
+    create_test_data(str(db_info), str(db_name), str(table), str(file_path), str(create_data),str(delete_data))
+  File "AutoTestService/utility/Data.py", line 109, in create_test_data
+    raise e
+ProgrammingError: (1064, "You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1")
+
+2018-01-16 16:49:39 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180116_service_Result.xls
+2018-01-16 17:01:57 update_result处理失败。原因为:Traceback (most recent call last):
+  File "/Users/luoranbin/soft/web/autoweb/AutoTestService/base/DBController.py", line 125, in exe_update
+    rows = self.cursor.execute(sql)
+  File "/Library/Python/2.7/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+ProgrammingError: (1146, "Table 'crm.activity_apply_productuser_apply' doesn't exist")
+
+2018-01-16 17:01:57 exe_update 执行失败，参数为:sql=delete from activity_apply_productuser_apply where uid in (2000007325,2000007325,2000000000,2000000000,2000031200,2000031200) 
+2018-01-16 17:01:58 create_test_data处理失败，原因为：Traceback (most recent call last):
+  File "/Users/luoranbin/soft/web/autoweb/AutoTestService/utility/Data.py", line 97, in create_test_data
+    db.exe_update(del_sql)
+  File "/Users/luoranbin/soft/web/autoweb/AutoTestService/base/DBController.py", line 133, in exe_update
+    raise e
+ProgrammingError: (1146, "Table 'crm.activity_apply_productuser_apply' doesn't exist")
+
+2018-01-16 17:06:33 update_result处理失败。原因为:Traceback (most recent call last):
+  File "/Users/luoranbin/soft/web/autoweb/AutoTestService/base/DBController.py", line 125, in exe_update
+    rows = self.cursor.execute(sql)
+  File "/Library/Python/2.7/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+IntegrityError: (1062, "Duplicate entry '100' for key 'PRIMARY'")
+
+2018-01-16 17:06:33 exe_update 执行失败，参数为:sql=insert into user_apply (`id`,`uid`,`hash_id`,`welfare_date_id`,`privilege`,`created_at`)values(100,2000000000,'d150128p117626',300,1,1516006026) 
+2018-01-16 17:06:33 create_test_data处理失败，原因为：Traceback (most recent call last):
+  File "/Users/luoranbin/soft/web/autoweb/AutoTestService/utility/Data.py", line 103, in create_test_data
+    db.exe_update(insert_sql)
+  File "/Users/luoranbin/soft/web/autoweb/AutoTestService/base/DBController.py", line 133, in exe_update
+    raise e
+IntegrityError: (1062, "Duplicate entry '100' for key 'PRIMARY'")
+
+2018-01-16 17:06:33 pre_options处理失败，原因为：Traceback (most recent call last):
+  File "/Users/luoranbin/soft/web/autoweb/AutoTestService/utility/Data.py", line 854, in pre_options
+    create_test_data(str(db_info), str(db_name), str(table), str(file_path), str(create_data),str(delete_data))
+  File "/Users/luoranbin/soft/web/autoweb/AutoTestService/utility/Data.py", line 109, in create_test_data
+    raise e
+IntegrityError: (1062, "Duplicate entry '100' for key 'PRIMARY'")
+
+2018-01-16 17:06:33 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180116_service_Result.xls
+2018-01-16 17:07:56 update_result处理失败。原因为:Traceback (most recent call last):
+  File "/Users/luoranbin/soft/web/autoweb/AutoTestService/base/DBController.py", line 125, in exe_update
+    rows = self.cursor.execute(sql)
+  File "/Library/Python/2.7/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+IntegrityError: (1062, "Duplicate entry '150' for key 'PRIMARY'")
+
+2018-01-16 17:07:56 exe_update 执行失败，参数为:sql=insert into user_apply_lottery (`id`,`uid`,`hash_id`,`welfare_date_id`,`privilege`,`order_id`,`address_id`,`created_at`)values(150,2000007325,'d141220p177610',301,2,807773784,129718475,1512615673) 
+2018-01-16 17:07:57 create_test_data处理失败，原因为：Traceback (most recent call last):
+  File "/Users/luoranbin/soft/web/autoweb/AutoTestService/utility/Data.py", line 103, in create_test_data
+    db.exe_update(insert_sql)
+  File "/Users/luoranbin/soft/web/autoweb/AutoTestService/base/DBController.py", line 133, in exe_update
+    raise e
+IntegrityError: (1062, "Duplicate entry '150' for key 'PRIMARY'")
+
+2018-01-16 17:07:57 pre_options处理失败，原因为：Traceback (most recent call last):
+  File "/Users/luoranbin/soft/web/autoweb/AutoTestService/utility/Data.py", line 854, in pre_options
+    create_test_data(str(db_info), str(db_name), str(table), str(file_path), str(create_data),str(delete_data))
+  File "/Users/luoranbin/soft/web/autoweb/AutoTestService/utility/Data.py", line 109, in create_test_data
+    raise e
+IntegrityError: (1062, "Duplicate entry '150' for key 'PRIMARY'")
+
+2018-01-16 17:07:57 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180116_service_Result.xls
+2018-01-16 17:09:04 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180116_service_Result.xls
+2018-01-16 17:15:56 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180116_service_Result.xls
+2018-01-16 17:24:15 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180116_service_Result.xls
+2018-01-16 17:31:17 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180116_service_Result.xls
+2018-01-16 17:32:09 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180116_service_Result.xls
+2018-01-16 17:33:02 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180116_service_Result.xls
+2018-01-16 17:41:49 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180116_service_Result.xls
+2018-01-16 17:46:25 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180116_service_Result.xls
+2018-01-16 17:52:06 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180116_service_Result.xls
+2018-01-16 17:53:13 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180116_service_Result.xls
+2018-01-16 17:54:21 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180116_service_Result.xls
+2018-01-16 17:54:52 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180116_service_Result.xls
+2018-01-16 17:59:03 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180116_service_Result.xls
+2018-01-16 18:12:26 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180116_service_Result.xls
+2018-01-16 18:21:39 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180116_service_Result.xls
+2018-01-16 18:23:13 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180116_service_Result.xls
+2018-01-16 18:40:51 update_result处理失败。原因为:Traceback (most recent call last):
+  File "AutoTestService/base/DBController.py", line 125, in exe_update
+    rows = self.cursor.execute(sql)
+  File "/Library/Python/2.7/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+IntegrityError: (1062, "Duplicate entry '172' for key 'PRIMARY'")
+
+2018-01-16 18:40:51 exe_update 执行失败，参数为:sql=insert into user_apply_lottery (`id`,`uid`,`hash_id`,`welfare_date_id`,`privilege`,`order_id`,`address_id`,`created_at`)values(172,2000031200,'d141220p177610',98,2,'','',1512615673) 
+2018-01-16 18:40:51 create_test_data处理失败，原因为：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 103, in create_test_data
+    db.exe_update(insert_sql)
+  File "AutoTestService/base/DBController.py", line 133, in exe_update
+    raise e
+IntegrityError: (1062, "Duplicate entry '172' for key 'PRIMARY'")
+
+2018-01-16 18:40:51 pre_options处理失败，原因为：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 854, in pre_options
+    create_test_data(str(db_info), str(db_name), str(table), str(file_path), str(create_data),str(delete_data))
+  File "AutoTestService/utility/Data.py", line 109, in create_test_data
+    raise e
+IntegrityError: (1062, "Duplicate entry '172' for key 'PRIMARY'")
+
+2018-01-16 18:40:51 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180116_service_Result.xls
+2018-01-16 18:42:13 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180116_service_Result.xls
+2018-01-16 18:43:47 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180116_service_Result.xls
+2018-01-16 18:45:50 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180116_service_Result.xls
+2018-01-16 18:54:12 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180116_service_Result.xls
+2018-01-16 18:56:45 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180116_service_Result.xls
+2018-01-16 18:59:00 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180116_service_Result.xls

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>数据检查</title>
+    <link rel="stylesheet" type="text/css" href="../media/css/main.css">
+</head>
+<body>
+<form id="create" method="post">
+    {% csrf_token %}
+    操作的类型：{{ form.select_type }}
+{#    <select id="option_type" name="select_type">#}
+{#        <option value="check_format">检查格式</option>#}
+{#        <option value="array_json">array转json</option>#}
+{#        <option value="json_array">json转array</option>#}
+{#    </select>#}
+    <br>
+{#请输入数据：<br><textarea name="check_data" id="id_check" style="width: 500px;height: 200px"></textarea>#}
+请输入数据：<br>{{ form.check_data }}
+<div id="container"></div>
+    <input type="submit" id="ffff" value="点击进行处理" class="button" ><br>
+{# <input id="org" type="button" value="添加" onclick="add_tr(this)"><br>#}
+    数据结果:<br><textarea name="result" id="id_result" style="width: 500px;height: 200px">{{ test }}</textarea>
+
+</form>
+
+
+</body>
+</html>

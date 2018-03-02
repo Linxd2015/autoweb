@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ProjectHost>
+	<project name="promocard">
+	    <Resource redisName="promoCardData">
+	        <host>192.168.49.44</host>
+	        <port>27004</port>
+	        <db>9</db>
+	    </Resource>
+	    <Resource redisName="promoCardData">
+	        <host>192.168.49.44</host>
+	        <port>27005</port>
+	        <db>9</db>
+	    </Resource>
+    </project>
+    <project name="userinfo">
+   	    <Resource redisName="default">
+	        <host>192.168.53.17</host>
+	        <port>27002</port>
+	        <db>1</db>
+	    </Resource>
+    </project>
+</ProjectHost>

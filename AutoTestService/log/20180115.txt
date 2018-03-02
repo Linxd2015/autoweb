@@ -1,0 +1,544 @@
+2018-01-15 10:18:25 select DISTINCT(project_type) from timetask_totalprojects where project_name in ('PromoCard','UserCenter_API','UserInfo')
+2018-01-15 10:26:24 select DISTINCT(project_type) from timetask_totalprojects where project_name in ('UserCenter_API','PromoCard','UserInfo')
+2018-01-15 10:27:15 select DISTINCT(project_type) from timetask_totalprojects where project_name in ('UserCenter_API','PromoCard','UserInfo')
+2018-01-15 10:28:22 get_case_datas处理失败，原因为：PromoCard／PromoCardSharding／createPromoCardsToDbV2接口的检查的数据有问题，请检查。 
+  详细报错信息：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 553, in get_case_datas
+    raise e
+ValueError: Expecting object: line 1 column 73 (char 72)
+ 
+2018-01-15 10:28:25 pre_options处理失败，原因为：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 847, in pre_options
+    create_test_data(str(db_info), str(db_name), str(table), str(file_path), str(create_data),str(delete_data))
+  File "AutoTestService/utility/Data.py", line 91, in create_test_data
+    db.connect_mysql(db_info, db_name)
+  File "AutoTestService/base/DBController.py", line 68, in connect_mysql
+    raise e
+OperationalError: (2003, "Can't connect to MySQL server on '192.168.16.31' (61)")
+
+2018-01-15 10:28:34 pre_options处理失败，原因为：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 847, in pre_options
+    create_test_data(str(db_info), str(db_name), str(table), str(file_path), str(create_data),str(delete_data))
+  File "AutoTestService/utility/Data.py", line 91, in create_test_data
+    db.connect_mysql(db_info, db_name)
+  File "AutoTestService/base/DBController.py", line 68, in connect_mysql
+    raise e
+OperationalError: (2003, "Can't connect to MySQL server on '192.168.16.31' (61)")
+
+2018-01-15 10:28:37 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_service_Result.xls
+2018-01-15 10:29:17 get_case_datas处理失败，原因为：PromoCard／PromoCardSharding／createPromoCardsToDbV2接口的检查的数据有问题，请检查。 
+  详细报错信息：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 553, in get_case_datas
+    raise e
+ValueError: Expecting object: line 1 column 73 (char 72)
+ 
+2018-01-15 10:29:18 pre_options处理失败，原因为：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 847, in pre_options
+    create_test_data(str(db_info), str(db_name), str(table), str(file_path), str(create_data),str(delete_data))
+  File "AutoTestService/utility/Data.py", line 91, in create_test_data
+    db.connect_mysql(db_info, db_name)
+  File "AutoTestService/base/DBController.py", line 68, in connect_mysql
+    raise e
+OperationalError: (2003, "Can't connect to MySQL server on '192.168.16.31' (61)")
+
+2018-01-15 10:29:25 pre_options处理失败，原因为：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 847, in pre_options
+    create_test_data(str(db_info), str(db_name), str(table), str(file_path), str(create_data),str(delete_data))
+  File "AutoTestService/utility/Data.py", line 91, in create_test_data
+    db.connect_mysql(db_info, db_name)
+  File "AutoTestService/base/DBController.py", line 68, in connect_mysql
+    raise e
+OperationalError: (2003, "Can't connect to MySQL server on '192.168.16.31' (61)")
+
+2018-01-15 10:29:27 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_service_Result.xls
+2018-01-15 10:56:09 get_case_datas处理失败，详细报错信息：Traceback (most recent call last):
+  File "/Users/luoranbin/soft/web/autoweb/AutoTestService/utility/Data.py", line 597, in get_case_datas
+    response = datas.get(pro).get(name).get(func)
+AttributeError: 'NoneType' object has no attribute 'get'
+ 
+2018-01-15 11:04:00 get_case_datas处理失败，详细报错信息：Traceback (most recent call last):
+  File "/Users/luoranbin/soft/web/autoweb/AutoTestService/utility/Data.py", line 597, in get_case_datas
+    response = datas.get(pro).get(name).get(func)
+AttributeError: 'NoneType' object has no attribute 'get'
+ 
+2018-01-15 11:04:00 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_api_Result.xls
+2018-01-15 11:04:44 get_case_datas处理失败，详细报错信息：Traceback (most recent call last):
+  File "/Users/luoranbin/soft/web/autoweb/AutoTestService/utility/Data.py", line 597, in get_case_datas
+    response = datas.get(pro).get(name).get(func)
+AttributeError: 'NoneType' object has no attribute 'get'
+ 
+2018-01-15 11:07:19 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_api_Result.xls
+2018-01-15 11:07:43 select DISTINCT(project_type) from timetask_totalprojects where project_name in ('UserCenter_API','PromoCard','UserInfo')
+2018-01-15 11:08:44 get_case_datas处理失败，原因为：PromoCard／PromoCardSharding／createPromoCardsToDbV2接口的检查的数据有问题，请检查。 
+  详细报错信息：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 553, in get_case_datas
+    raise e
+ValueError: Expecting object: line 1 column 73 (char 72)
+ 
+2018-01-15 11:08:54 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_service_Result.xls
+2018-01-15 11:08:57 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_api_Result.xls
+2018-01-15 11:09:44 get_case_datas处理失败，原因为：PromoCard／PromoCardSharding／createPromoCardsToDbV2接口的检查的数据有问题，请检查。 
+  详细报错信息：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 553, in get_case_datas
+    raise e
+ValueError: Expecting object: line 1 column 73 (char 72)
+ 
+2018-01-15 11:09:53 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_service_Result.xls
+2018-01-15 11:09:55 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_api_Result.xls
+2018-01-15 11:10:44 get_case_datas处理失败，原因为：PromoCard／PromoCardSharding／createPromoCardsToDbV2接口的检查的数据有问题，请检查。 
+  详细报错信息：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 553, in get_case_datas
+    raise e
+ValueError: Expecting object: line 1 column 73 (char 72)
+ 
+2018-01-15 11:10:52 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_service_Result.xls
+2018-01-15 11:10:55 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_api_Result.xls
+2018-01-15 11:11:34 清理执行结果失败,because：too many values to unpack
+2018-01-15 11:11:39 清理执行结果失败,because：too many values to unpack
+2018-01-15 11:32:16 select DISTINCT(project_type) from timetask_totalprojects where project_name in ('UserCenter_API','PromoCard','UserInfo')
+2018-01-15 11:33:21 get_case_datas处理失败，原因为：PromoCard／PromoCardSharding／createPromoCardsToDbV2接口的检查的数据有问题，请检查。 
+  详细报错信息：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 553, in get_case_datas
+    raise e
+ValueError: Expecting object: line 1 column 73 (char 72)
+ 
+2018-01-15 11:33:31 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_service_Result.xls
+2018-01-15 11:33:33 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_api_Result.xls
+2018-01-15 11:34:17 get_case_datas处理失败，原因为：PromoCard／PromoCardSharding／createPromoCardsToDbV2接口的检查的数据有问题，请检查。 
+  详细报错信息：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 553, in get_case_datas
+    raise e
+ValueError: Expecting object: line 1 column 73 (char 72)
+ 
+2018-01-15 11:34:26 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_service_Result.xls
+2018-01-15 11:34:28 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_api_Result.xls
+2018-01-15 11:34:44 select DISTINCT(project_type) from timetask_totalprojects where project_name in ('UserCenter_API','PromoCard','UserInfo')
+2018-01-15 11:35:45 get_case_datas处理失败，原因为：PromoCard／PromoCardSharding／createPromoCardsToDbV2接口的检查的数据有问题，请检查。 
+  详细报错信息：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 553, in get_case_datas
+    raise e
+ValueError: Expecting object: line 1 column 73 (char 72)
+ 
+2018-01-15 11:35:45 get_case_datas处理失败，原因为：PromoCard／PromoCardSharding／createPromoCardsToDbV2接口的检查的数据有问题，请检查。 
+  详细报错信息：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 553, in get_case_datas
+    raise e
+ValueError: Expecting object: line 1 column 73 (char 72)
+ 
+2018-01-15 11:35:46 update_result处理失败。原因为:Traceback (most recent call last):
+  File "AutoTestService/base/DBController.py", line 125, in exe_update
+    rows = self.cursor.execute(sql)
+  File "/Library/Python/2.7/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+IntegrityError: (1062, "Duplicate entry '1067' for key 'PRIMARY'")
+
+2018-01-15 11:35:46 exe_update 执行失败，参数为:sql=insert into promocards_0 (`id`,`sharding_id`,`scope_id`,`card_no`,`batch_no`,`type`,`effect_method`,`effect_params`,`minimal_order_amount`,`binded_uid`,`used_uid`,`used_order_id`,`used_time`,`status`,`enable_time`,`expire_time`,`current_usage`,`usage_limit`,`desc`,`retrieval_source`,`retrieval_source_ref_id`,`source_type`,`source_id`,`issue_time`,`updated_at`)values(1067,'6000','9527','SD2FSMGLVBRZTT','mobile_141028oppo_5-5','normal','rmb_off','5.00','5.00','6000','0','0','0','activated',1414339200,'1767196800','0','1','5元现金券','','0','','0','1414658840','0') 
+2018-01-15 11:35:46 create_test_data处理失败，原因为：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 103, in create_test_data
+    db.exe_update(insert_sql)
+  File "AutoTestService/base/DBController.py", line 133, in exe_update
+    raise e
+IntegrityError: (1062, "Duplicate entry '1067' for key 'PRIMARY'")
+
+2018-01-15 11:35:46 pre_options处理失败，原因为：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 854, in pre_options
+    create_test_data(str(db_info), str(db_name), str(table), str(file_path), str(create_data),str(delete_data))
+  File "AutoTestService/utility/Data.py", line 109, in create_test_data
+    raise e
+IntegrityError: (1062, "Duplicate entry '1067' for key 'PRIMARY'")
+
+2018-01-15 11:35:48 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_service_Result.xls
+2018-01-15 11:35:50 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_api_Result.xls
+2018-01-15 11:35:54 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_service_Result.xls
+2018-01-15 11:35:56 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_api_Result.xls
+2018-01-15 11:36:45 get_case_datas处理失败，原因为：PromoCard／PromoCardSharding／createPromoCardsToDbV2接口的检查的数据有问题，请检查。 
+  详细报错信息：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 553, in get_case_datas
+    raise e
+ValueError: Expecting object: line 1 column 73 (char 72)
+ 
+2018-01-15 11:36:45 get_case_datas处理失败，原因为：PromoCard／PromoCardSharding／createPromoCardsToDbV2接口的检查的数据有问题，请检查。 
+  详细报错信息：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 553, in get_case_datas
+    raise e
+ValueError: Expecting object: line 1 column 73 (char 72)
+ 
+2018-01-15 11:36:46 update_result处理失败。原因为:Traceback (most recent call last):
+  File "AutoTestService/base/DBController.py", line 125, in exe_update
+    rows = self.cursor.execute(sql)
+  File "/Library/Python/2.7/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+IntegrityError: (1062, "Duplicate entry '1067' for key 'PRIMARY'")
+
+2018-01-15 11:36:46 exe_update 执行失败，参数为:sql=insert into promocards_0 (`id`,`sharding_id`,`scope_id`,`card_no`,`batch_no`,`type`,`effect_method`,`effect_params`,`minimal_order_amount`,`binded_uid`,`used_uid`,`used_order_id`,`used_time`,`status`,`enable_time`,`expire_time`,`current_usage`,`usage_limit`,`desc`,`retrieval_source`,`retrieval_source_ref_id`,`source_type`,`source_id`,`issue_time`,`updated_at`)values(1067,'6000','9527','SD2FSMGLVBRZTT','mobile_141028oppo_5-5','normal','rmb_off','5.00','5.00','6000','0','0','0','activated',1414339200,'1767196800','0','1','5元现金券','','0','','0','1414658840','0') 
+2018-01-15 11:36:46 create_test_data处理失败，原因为：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 103, in create_test_data
+    db.exe_update(insert_sql)
+  File "AutoTestService/base/DBController.py", line 133, in exe_update
+    raise e
+IntegrityError: (1062, "Duplicate entry '1067' for key 'PRIMARY'")
+
+2018-01-15 11:36:46 pre_options处理失败，原因为：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 854, in pre_options
+    create_test_data(str(db_info), str(db_name), str(table), str(file_path), str(create_data),str(delete_data))
+  File "AutoTestService/utility/Data.py", line 109, in create_test_data
+    raise e
+IntegrityError: (1062, "Duplicate entry '1067' for key 'PRIMARY'")
+
+2018-01-15 11:36:47 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_service_Result.xls
+2018-01-15 11:36:50 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_api_Result.xls
+2018-01-15 11:36:53 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_service_Result.xls
+2018-01-15 11:36:56 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_api_Result.xls
+2018-01-15 11:37:45 get_case_datas处理失败，原因为：PromoCard／PromoCardSharding／createPromoCardsToDbV2接口的检查的数据有问题，请检查。 
+  详细报错信息：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 553, in get_case_datas
+    raise e
+ValueError: Expecting object: line 1 column 73 (char 72)
+ 
+2018-01-15 11:37:45 get_case_datas处理失败，原因为：PromoCard／PromoCardSharding／createPromoCardsToDbV2接口的检查的数据有问题，请检查。 
+  详细报错信息：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 553, in get_case_datas
+    raise e
+ValueError: Expecting object: line 1 column 73 (char 72)
+ 
+2018-01-15 11:37:46 update_result处理失败。原因为:Traceback (most recent call last):
+  File "AutoTestService/base/DBController.py", line 125, in exe_update
+    rows = self.cursor.execute(sql)
+  File "/Library/Python/2.7/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+IntegrityError: (1062, "Duplicate entry '1067' for key 'PRIMARY'")
+
+2018-01-15 11:37:46 exe_update 执行失败，参数为:sql=insert into promocards_0 (`id`,`sharding_id`,`scope_id`,`card_no`,`batch_no`,`type`,`effect_method`,`effect_params`,`minimal_order_amount`,`binded_uid`,`used_uid`,`used_order_id`,`used_time`,`status`,`enable_time`,`expire_time`,`current_usage`,`usage_limit`,`desc`,`retrieval_source`,`retrieval_source_ref_id`,`source_type`,`source_id`,`issue_time`,`updated_at`)values(1067,'6000','9527','SD2FSMGLVBRZTT','mobile_141028oppo_5-5','normal','rmb_off','5.00','5.00','6000','0','0','0','activated',1414339200,'1767196800','0','1','5元现金券','','0','','0','1414658840','0') 
+2018-01-15 11:37:46 create_test_data处理失败，原因为：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 103, in create_test_data
+    db.exe_update(insert_sql)
+  File "AutoTestService/base/DBController.py", line 133, in exe_update
+    raise e
+IntegrityError: (1062, "Duplicate entry '1067' for key 'PRIMARY'")
+
+2018-01-15 11:37:46 pre_options处理失败，原因为：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 854, in pre_options
+    create_test_data(str(db_info), str(db_name), str(table), str(file_path), str(create_data),str(delete_data))
+  File "AutoTestService/utility/Data.py", line 109, in create_test_data
+    raise e
+IntegrityError: (1062, "Duplicate entry '1067' for key 'PRIMARY'")
+
+2018-01-15 11:37:48 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_service_Result.xls
+2018-01-15 11:37:50 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_api_Result.xls
+2018-01-15 11:37:54 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_service_Result.xls
+2018-01-15 11:37:57 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_api_Result.xls
+2018-01-15 11:38:45 get_case_datas处理失败，原因为：PromoCard／PromoCardSharding／createPromoCardsToDbV2接口的检查的数据有问题，请检查。 
+  详细报错信息：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 553, in get_case_datas
+    raise e
+ValueError: Expecting object: line 1 column 73 (char 72)
+ 
+2018-01-15 11:38:45 get_case_datas处理失败，原因为：PromoCard／PromoCardSharding／createPromoCardsToDbV2接口的检查的数据有问题，请检查。 
+  详细报错信息：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 553, in get_case_datas
+    raise e
+ValueError: Expecting object: line 1 column 73 (char 72)
+ 
+2018-01-15 11:38:46 update_result处理失败。原因为:Traceback (most recent call last):
+  File "AutoTestService/base/DBController.py", line 125, in exe_update
+    rows = self.cursor.execute(sql)
+  File "/Library/Python/2.7/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+IntegrityError: (1062, "Duplicate entry '1067' for key 'PRIMARY'")
+
+2018-01-15 11:38:46 exe_update 执行失败，参数为:sql=insert into promocards_0 (`id`,`sharding_id`,`scope_id`,`card_no`,`batch_no`,`type`,`effect_method`,`effect_params`,`minimal_order_amount`,`binded_uid`,`used_uid`,`used_order_id`,`used_time`,`status`,`enable_time`,`expire_time`,`current_usage`,`usage_limit`,`desc`,`retrieval_source`,`retrieval_source_ref_id`,`source_type`,`source_id`,`issue_time`,`updated_at`)values(1067,'6000','9527','SD2FSMGLVBRZTT','mobile_141028oppo_5-5','normal','rmb_off','5.00','5.00','6000','0','0','0','activated',1414339200,'1767196800','0','1','5元现金券','','0','','0','1414658840','0') 
+2018-01-15 11:38:46 create_test_data处理失败，原因为：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 103, in create_test_data
+    db.exe_update(insert_sql)
+  File "AutoTestService/base/DBController.py", line 133, in exe_update
+    raise e
+IntegrityError: (1062, "Duplicate entry '1067' for key 'PRIMARY'")
+
+2018-01-15 11:38:46 pre_options处理失败，原因为：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 854, in pre_options
+    create_test_data(str(db_info), str(db_name), str(table), str(file_path), str(create_data),str(delete_data))
+  File "AutoTestService/utility/Data.py", line 109, in create_test_data
+    raise e
+IntegrityError: (1062, "Duplicate entry '1067' for key 'PRIMARY'")
+
+2018-01-15 11:38:53 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_service_Result.xls
+2018-01-15 11:38:55 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_service_Result.xls
+2018-01-15 11:38:55 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_api_Result.xls
+2018-01-15 11:38:58 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_api_Result.xls
+2018-01-15 11:39:13 select DISTINCT(project_type) from timetask_totalprojects where project_name in ('UserCenter_API','PromoCard','UserInfo')
+2018-01-15 11:40:14 get_case_datas处理失败，原因为：PromoCard／PromoCardSharding／createPromoCardsToDbV2接口的检查的数据有问题，请检查。 
+  详细报错信息：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 553, in get_case_datas
+    raise e
+ValueError: Expecting object: line 1 column 73 (char 72)
+ 
+2018-01-15 11:40:14 get_case_datas处理失败，原因为：PromoCard／PromoCardSharding／createPromoCardsToDbV2接口的检查的数据有问题，请检查。 
+  详细报错信息：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 553, in get_case_datas
+    raise e
+ValueError: Expecting object: line 1 column 73 (char 72)
+ 
+2018-01-15 11:40:14 get_case_datas处理失败，原因为：PromoCard／PromoCardSharding／createPromoCardsToDbV2接口的检查的数据有问题，请检查。 
+  详细报错信息：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 553, in get_case_datas
+    raise e
+ValueError: Expecting object: line 1 column 73 (char 72)
+ 
+2018-01-15 11:40:14 update_result处理失败。原因为:Traceback (most recent call last):
+  File "AutoTestService/base/DBController.py", line 125, in exe_update
+    rows = self.cursor.execute(sql)
+  File "/Library/Python/2.7/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+IntegrityError: (1062, "Duplicate entry '1067' for key 'PRIMARY'")
+
+2018-01-15 11:40:14 exe_update 执行失败，参数为:sql=insert into promocards_0 (`id`,`sharding_id`,`scope_id`,`card_no`,`batch_no`,`type`,`effect_method`,`effect_params`,`minimal_order_amount`,`binded_uid`,`used_uid`,`used_order_id`,`used_time`,`status`,`enable_time`,`expire_time`,`current_usage`,`usage_limit`,`desc`,`retrieval_source`,`retrieval_source_ref_id`,`source_type`,`source_id`,`issue_time`,`updated_at`)values(1067,'6000','9527','SD2FSMGLVBRZTT','mobile_141028oppo_5-5','normal','rmb_off','5.00','5.00','6000','0','0','0','activated',1414339200,'1767196800','0','1','5元现金券','','0','','0','1414658840','0') 
+2018-01-15 11:40:14 update_result处理失败。原因为:Traceback (most recent call last):
+  File "AutoTestService/base/DBController.py", line 125, in exe_update
+    rows = self.cursor.execute(sql)
+  File "/Library/Python/2.7/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+IntegrityError: (1062, "Duplicate entry '1067' for key 'PRIMARY'")
+
+2018-01-15 11:40:14 exe_update 执行失败，参数为:sql=insert into promocards_0 (`id`,`sharding_id`,`scope_id`,`card_no`,`batch_no`,`type`,`effect_method`,`effect_params`,`minimal_order_amount`,`binded_uid`,`used_uid`,`used_order_id`,`used_time`,`status`,`enable_time`,`expire_time`,`current_usage`,`usage_limit`,`desc`,`retrieval_source`,`retrieval_source_ref_id`,`source_type`,`source_id`,`issue_time`,`updated_at`)values(1067,'6000','9527','SD2FSMGLVBRZTT','mobile_141028oppo_5-5','normal','rmb_off','5.00','5.00','6000','0','0','0','activated',1414339200,'1767196800','0','1','5元现金券','','0','','0','1414658840','0') 
+2018-01-15 11:40:14 create_test_data处理失败，原因为：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 103, in create_test_data
+    db.exe_update(insert_sql)
+  File "AutoTestService/base/DBController.py", line 133, in exe_update
+    raise e
+IntegrityError: (1062, "Duplicate entry '1067' for key 'PRIMARY'")
+
+2018-01-15 11:40:14 create_test_data处理失败，原因为：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 103, in create_test_data
+    db.exe_update(insert_sql)
+  File "AutoTestService/base/DBController.py", line 133, in exe_update
+    raise e
+IntegrityError: (1062, "Duplicate entry '1067' for key 'PRIMARY'")
+
+2018-01-15 11:40:14 pre_options处理失败，原因为：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 854, in pre_options
+    create_test_data(str(db_info), str(db_name), str(table), str(file_path), str(create_data),str(delete_data))
+  File "AutoTestService/utility/Data.py", line 109, in create_test_data
+    raise e
+IntegrityError: (1062, "Duplicate entry '1067' for key 'PRIMARY'")
+
+2018-01-15 11:40:14 pre_options处理失败，原因为：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 854, in pre_options
+    create_test_data(str(db_info), str(db_name), str(table), str(file_path), str(create_data),str(delete_data))
+  File "AutoTestService/utility/Data.py", line 109, in create_test_data
+    raise e
+IntegrityError: (1062, "Duplicate entry '1067' for key 'PRIMARY'")
+
+2018-01-15 11:40:16 update_result处理失败。原因为:Traceback (most recent call last):
+  File "AutoTestService/base/DBController.py", line 125, in exe_update
+    rows = self.cursor.execute(sql)
+  File "/Library/Python/2.7/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+IntegrityError: (1062, "Duplicate entry '2501' for key 'PRIMARY'")
+
+2018-01-15 11:40:16 exe_update 执行失败，参数为:sql=insert into promocard_cardno_map_63 (`id`,`sharding_id`,`card_no`)values(2501,200012000,'AAAAAAAAABBDXK') 
+2018-01-15 11:40:16 create_test_data处理失败，原因为：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 103, in create_test_data
+    db.exe_update(insert_sql)
+  File "AutoTestService/base/DBController.py", line 133, in exe_update
+    raise e
+IntegrityError: (1062, "Duplicate entry '2501' for key 'PRIMARY'")
+
+2018-01-15 11:40:16 pre_options处理失败，原因为：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 854, in pre_options
+    create_test_data(str(db_info), str(db_name), str(table), str(file_path), str(create_data),str(delete_data))
+  File "AutoTestService/utility/Data.py", line 109, in create_test_data
+    raise e
+IntegrityError: (1062, "Duplicate entry '2501' for key 'PRIMARY'")
+
+2018-01-15 11:40:16 update_result处理失败。原因为:Traceback (most recent call last):
+  File "AutoTestService/base/DBController.py", line 125, in exe_update
+    rows = self.cursor.execute(sql)
+  File "/Library/Python/2.7/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+IntegrityError: (1062, "Duplicate entry '2500' for key 'PRIMARY'")
+
+2018-01-15 11:40:16 exe_update 执行失败，参数为:sql=insert into promocard_cardno_map_63 (`id`,`sharding_id`,`card_no`)values(2500,200012000,'AAAAAAAAABADXK') 
+2018-01-15 11:40:16 create_test_data处理失败，原因为：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 103, in create_test_data
+    db.exe_update(insert_sql)
+  File "AutoTestService/base/DBController.py", line 133, in exe_update
+    raise e
+IntegrityError: (1062, "Duplicate entry '2500' for key 'PRIMARY'")
+
+2018-01-15 11:40:16 pre_options处理失败，原因为：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 854, in pre_options
+    create_test_data(str(db_info), str(db_name), str(table), str(file_path), str(create_data),str(delete_data))
+  File "AutoTestService/utility/Data.py", line 109, in create_test_data
+    raise e
+IntegrityError: (1062, "Duplicate entry '2500' for key 'PRIMARY'")
+
+2018-01-15 11:40:22 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_service_Result.xls
+2018-01-15 11:40:22 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_service_Result.xls
+2018-01-15 11:40:23 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_service_Result.xls
+2018-01-15 11:40:25 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_api_Result.xls
+2018-01-15 11:40:25 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_api_Result.xls
+2018-01-15 11:40:25 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_api_Result.xls
+2018-01-15 11:41:00 get_total_data处理失败，原因为：Traceback (most recent call last):
+  File "/Users/luoranbin/soft/web/autoweb/AutoTestService/utility/Data.py", line 726, in get_total_data_v2
+    run_list = json.loads(run_conf.get(task,'run'))
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+
+2018-01-15 11:41:06 get_total_data处理失败，原因为：Traceback (most recent call last):
+  File "/Users/luoranbin/soft/web/autoweb/AutoTestService/utility/Data.py", line 726, in get_total_data_v2
+    run_list = json.loads(run_conf.get(task,'run'))
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+
+2018-01-15 11:41:26 get_total_data处理失败，原因为：Traceback (most recent call last):
+  File "/Users/luoranbin/soft/web/autoweb/AutoTestService/utility/Data.py", line 726, in get_total_data_v2
+    run_list = json.loads(run_conf.get(task,'run'))
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+
+2018-01-15 11:42:07 get_total_data处理失败，原因为：Traceback (most recent call last):
+  File "/Users/luoranbin/soft/web/autoweb/AutoTestService/utility/Data.py", line 726, in get_total_data_v2
+    run_list = json.loads(run_conf.get(task,'run'))
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/__init__.py", line 338, in loads
+    return _default_decoder.decode(s)
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py", line 366, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "/System/Library/Frameworks/Python.framework/Versions/2.7/lib/python2.7/json/decoder.py", line 384, in raw_decode
+    raise ValueError("No JSON object could be decoded")
+ValueError: No JSON object could be decoded
+
+2018-01-15 11:42:52 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_api_Result.xls
+2018-01-15 11:43:10 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_api_Result.xls
+2018-01-15 11:46:04 select DISTINCT(project_type) from timetask_totalprojects where project_name in ('UserCenter_API','PromoCard','UserInfo')
+2018-01-15 11:47:53 select DISTINCT(project_type) from timetask_totalprojects where project_name in ('UserCenter_API','PromoCard','UserInfo')
+2018-01-15 11:49:40 select DISTINCT(project_type) from timetask_totalprojects where project_name in ('UserCenter_API','PromoCard','UserInfo')
+2018-01-15 11:50:14 select DISTINCT(project_type) from timetask_totalprojects where project_name in ('UserCenter_API','PromoCard','UserInfo')
+2018-01-15 11:51:14 111111
+
+2018-01-15 11:51:14 111111
+
+2018-01-15 11:51:14 2222
+
+2018-01-15 11:51:14 get_case_datas处理失败，原因为：PromoCard／PromoCardSharding／createPromoCardsToDbV2接口的检查的数据有问题，请检查。 
+  详细报错信息：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 553, in get_case_datas
+    raise e
+ValueError: Expecting object: line 1 column 73 (char 72)
+ 
+2018-01-15 11:51:24 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_service_Result.xls
+2018-01-15 11:51:24 2222
+
+2018-01-15 11:51:27 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_api_Result.xls
+2018-01-15 11:52:14 111111
+
+2018-01-15 11:52:14 get_case_datas处理失败，原因为：PromoCard／PromoCardSharding／createPromoCardsToDbV2接口的检查的数据有问题，请检查。 
+  详细报错信息：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 553, in get_case_datas
+    raise e
+ValueError: Expecting object: line 1 column 73 (char 72)
+ 
+2018-01-15 11:52:22 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_service_Result.xls
+2018-01-15 11:52:22 2222
+
+2018-01-15 11:52:24 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_api_Result.xls
+2018-01-15 11:53:14 111111
+
+2018-01-15 11:53:14 2222
+
+2018-01-15 11:54:14 111111
+
+2018-01-15 11:54:14 get_case_datas处理失败，原因为：PromoCard／PromoCardSharding／createPromoCardsToDbV2接口的检查的数据有问题，请检查。 
+  详细报错信息：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 553, in get_case_datas
+    raise e
+ValueError: Expecting object: line 1 column 73 (char 72)
+ 
+2018-01-15 11:54:22 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_service_Result.xls
+2018-01-15 11:54:22 2222
+
+2018-01-15 11:54:25 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_api_Result.xls
+2018-01-15 11:54:50 select DISTINCT(project_type) from timetask_totalprojects where project_name in ('UserCenter_API','PromoCard','UserInfo')
+2018-01-15 11:55:50 111111
+
+2018-01-15 11:55:50 get_case_datas处理失败，原因为：PromoCard／PromoCardSharding／createPromoCardsToDbV2接口的检查的数据有问题，请检查。 
+  详细报错信息：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 553, in get_case_datas
+    raise e
+ValueError: Expecting object: line 1 column 73 (char 72)
+ 
+2018-01-15 11:55:59 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_service_Result.xls
+2018-01-15 11:55:59 2222
+
+2018-01-15 11:56:02 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_api_Result.xls
+2018-01-15 11:56:50 111111
+
+2018-01-15 11:56:50 get_case_datas处理失败，原因为：PromoCard／PromoCardSharding／createPromoCardsToDbV2接口的检查的数据有问题，请检查。 
+  详细报错信息：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 553, in get_case_datas
+    raise e
+ValueError: Expecting object: line 1 column 73 (char 72)
+ 
+2018-01-15 11:57:00 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_service_Result.xls
+2018-01-15 11:57:00 2222
+
+2018-01-15 11:57:03 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_api_Result.xls
+2018-01-15 11:57:52 select DISTINCT(project_type) from timetask_totalprojects where project_name in ('UserCenter_API','PromoCard','UserInfo')
+2018-01-15 11:58:52 111111
+
+2018-01-15 11:58:52 get_case_datas处理失败，原因为：PromoCard／PromoCardSharding／createPromoCardsToDbV2接口的检查的数据有问题，请检查。 
+  详细报错信息：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 553, in get_case_datas
+    raise e
+ValueError: Expecting object: line 1 column 73 (char 72)
+ 
+2018-01-15 11:59:01 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_service_Result.xls
+2018-01-15 11:59:01 2222
+
+2018-01-15 11:59:03 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_api_Result.xls
+2018-01-15 11:59:21 select DISTINCT(project_type) from timetask_totalprojects where project_name in ('UserCenter_API','PromoCard','UserInfo')
+2018-01-15 11:59:41 select DISTINCT(project_type) from timetask_totalprojects where project_name in ('UserCenter_API','PromoCard','UserInfo')
+2018-01-15 11:59:56 select DISTINCT(project_type) from timetask_totalprojects where project_name in ('UserCenter_API','PromoCard','UserInfo')
+2018-01-15 12:00:04 select DISTINCT(project_type) from timetask_totalprojects where project_name in ('UserCenter_API','PromoCard','UserInfo')
+2018-01-15 12:00:13 select DISTINCT(project_type) from timetask_totalprojects where project_name in ('UserCenter_API','PromoCard','UserInfo')
+2018-01-15 12:01:28 select DISTINCT(project_type) from timetask_totalprojects where project_name in ('UserCenter_API','PromoCard','UserInfo')
+2018-01-15 14:49:27 get_case_datas处理失败，原因为：CrmService／MemberWelfare／getUserApplyListByPage接口的参数的数据有问题，请检查。 
+  详细报错信息：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 516, in get_case_datas
+    raise e
+ValueError: No JSON object could be decoded
+ 
+2018-01-15 14:49:28 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_service_Result.xls
+2018-01-15 14:50:42 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_service_Result.xls
+2018-01-15 14:51:44 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_service_Result.xls
+2018-01-15 14:54:27 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180115_service_Result.xls

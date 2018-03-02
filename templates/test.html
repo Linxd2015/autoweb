@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>测试数据构造</title>
+    <link rel="stylesheet" type="text/css" href="../media/css/main.css">
+</head>
+<body>
+<form id="create" method="post">
+   {% csrf_token %}
+{#    {{ form.info.label }}:{{ form.info }}#}
+{#    {{ form.db_name }}#}
+{#    {{ form }}#}
+    操作的类型：
+    <select id="option_type" name="select_type" onchange="sele_change(this)">
+        <option value="database">数据文件</option>
+        <option value="redis">缓存</option>
+        <option value="db_command">执行数据库命令</option>
+        <option value="create_case">测试用例组装</option>
+    </select>
+
+{#{{ form.type }}#}
+<div id="container"></div>
+ <script type="text/javascript" src="../media/js/main.js"> </script>
+<script>
+     window.onload = function () {
+         sele_change()
+     }
+</script>
+    <script type="text/javascript">
+        function sele_change (obj) {
+        var select_type = select_change()
+        if (select_type == "database")
+        {
+            document.getElementById("container").innerHTML =
+                    '数据库实例：{{ form.info }} <br>数据库名称：{{ form.db_name }}<br>数据库表名：{{ form.table_name }}<br>'+
+                    '插入 Sheet：{{ form.add_sheet }}<br>删除 Sheet：{{ form.del_sheet }}<br>文件的地址：'+
+                    '<input type ="text" name ="file_path" style="width: 300px;"></input>'
+{#             document.getElementById("container").innerHTML =#}
+{#                    '数据库实例：{{ form.info }} <br>数据库名称：{{ form.db_name }}<br>数据库表名：{{ form.table_name }}<br>'+#}
+{#                    '插入 Sheet：{{ form.add_sheet }}<br>删除 Sheet：{{ form.del_sheet }}<br>文件的地址：{{ form.file_path }}'#}
+        }
+        else if(select_type == "redis") {
+{#            document.getElementById("container").clearAttributes()#}
+              document.getElementById("container").innerHTML =
+                   'redis &nbsp操作：    <select name="redis_option">'+
+                    '<option value="get">get操作</option>'+
+                    '<option value="set">set操作</option>'+
+                    '<option value="del">del操作</option> <option value="hgetall">hgetall操作</option>   </select><br>'+
+                    'redis &nbsp项目： {{ form.redis_info }} <br>' +
+                    'redis &nbsp实例： {{ form.redis_name }} <br>'  +
+                    'redis &nbsp键值： {{ form.redis_key }}（即：缓存key） <br>redis &nbsp数据： {{ form.redis_data }}<br>'
+            }
+        else if(select_type == "db_command") {
+            document.getElementById("container").innerHTML =
+                    '数据库实例：{{ form.info }} <br>数据库名称：{{ form.db_name }}<br>'+
+                    '执行的语句：<input type ="text" name ="db_command_str" style="width: 300px;"></input>'
+        }
+        else
+            document.getElementById("container").innerHTML =
+                    '参数1：<input type ="text" name ="db_command_str" style="width: 300px;"></input>' +
+                    '<input type="button" id="add" value="增加参数" onclick="add_item(this)" class="add" ><br>'
+        }
+        function add_item(obj) {
+            var form = document.getElementById("container")
+            v
+        }
+
+    </script>
+{#    {{ form.type.label }}：{{ form.type }} <br>#}
+{#    {{ form.info.label }}: {{ form.info }}<br>#}
+{#    {{ form.db_name.label }}: {{ form.db_name }}<br>#}
+{#    {{ form.table_name.label }}: {{ form.table_name }}<br>#}
+{#    {{ form.add_sheet.label }}: {{ form.add_sheet }}<br>#}
+{#    {{ form.del_sheet.label }}: {{ form.del_sheet }}<br>#}
+{#    {{ form.file_path.label }}:<br> {{ form.file_path }}<br>#}
+    <input type="submit" id="action" value="点击生成测试数据"  class="button" ><br>
+{# <input id="org" type="button" value="添加" onclick="add_tr(this)"><br>#}
+    数据结果(可直接复制到测试case中):<br><textarea name="result" id="id_result" style="width: 500px;height: 200px">{{ test }}</textarea>
+
+</form>
+
+<div>
+</div>
+
+
+</body>
+</html>

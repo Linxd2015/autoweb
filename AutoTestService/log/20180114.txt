@@ -1,0 +1,62 @@
+2018-01-14 23:10:58 write_chart_info 执行失败，参数为:write_chart_info
+原因为:Traceback (most recent call last):
+  File "E:/pthon_pro/autoweb/AutoTestService/utility/Data.py", line 1135, in write_chart_info
+    if CHART_INFO.has_key1(project):
+AttributeError: 'dict' object has no attribute 'has_key1'
+2018-01-14 23:11:26 write_chart_info 执行失败，参数为:var_0 = Userinfo var_1 = False 
+原因为:Traceback (most recent call last):
+  File "E:/pthon_pro/autoweb/AutoTestService/utility/Data.py", line 1135, in write_chart_info
+    if CHART_INFO.has_key1(project):
+AttributeError: 'dict' object has no attribute 'has_key1'
+2018-01-14 23:27:02 get_sqlite_info 执行失败，参数为:sql=ssss 
+原因为:Traceback (most recent call last):
+  File "E:/pthon_pro/autoweb/AutoTestService/utility/Data.py", line 1199, in get_sqlite_info
+    result = db.exe_query(sql)
+  File "E:\pthon_pro\autoweb\AutoTestService\base\DBController.py", line 116, in exe_query
+    raise e
+OperationalError: near "ssss": syntax error
+2018-01-14 23:27:35 get_sqlite_info 执行失败，参数为:sql=ssss 
+原因为:Traceback (most recent call last):
+  File "E:/pthon_pro/autoweb/AutoTestService/utility/Data.py", line 1199, in get_sqlite_info
+    result = db.exe_query(sql)
+  File "E:\pthon_pro\autoweb\AutoTestService\base\DBController.py", line 116, in exe_query
+    raise e
+OperationalError: near "ssss": syntax error
+2018-01-14 23:29:58 update_result处理失败。原因为:Traceback (most recent call last):
+  File "E:\pthon_pro\autoweb\AutoTestService\base\DBController.py", line 125, in exe_update
+    rows = self.cursor.execute(sql)
+OperationalError: near "bb": syntax error
+
+2018-01-14 23:29:59 del_db_info失败,原因是Traceback (most recent call last):
+  File "E:/pthon_pro/autoweb/AutoTestService/utility/Data.py", line 1276, in del_db_info
+    db.exe_update(sql)
+  File "E:\pthon_pro\autoweb\AutoTestService\base\DBController.py", line 133, in exe_update
+    raise e
+OperationalError: near "bb": syntax error
+
+2018-01-14 23:30:58 update_result处理失败。原因为:Traceback (most recent call last):
+  File "E:\pthon_pro\autoweb\AutoTestService\base\DBController.py", line 125, in exe_update
+    rows = self.cursor.execute(sql)
+OperationalError: near "bb": syntax error
+
+2018-01-14 23:30:58 del_db_info失败,原因是Traceback (most recent call last):
+  File "E:/pthon_pro/autoweb/AutoTestService/utility/Data.py", line 1276, in del_db_info
+    db.exe_update(sql)
+  File "E:\pthon_pro\autoweb\AutoTestService\base\DBController.py", line 133, in exe_update
+    raise e
+OperationalError: near "bb": syntax error
+
+2018-01-14 23:34:54 update_result处理失败。原因为:Traceback (most recent call last):
+  File "E:\pthon_pro\autoweb\AutoTestService\base\DBController.py", line 125, in exe_update
+    rows = self.cursor.execute(sql)
+OperationalError: near "bb": syntax error
+
+2018-01-14 23:34:54 exe_update 执行失败，参数为:sql=delete from aa bb 
+2018-01-14 23:34:54 del_db_info失败,原因是Traceback (most recent call last):
+  File "E:/pthon_pro/autoweb/AutoTestService/utility/Data.py", line 1276, in del_db_info
+    db.exe_update(sql)
+  File "E:\pthon_pro\autoweb\AutoTestService\base\DBController.py", line 133, in exe_update
+    raise e
+OperationalError: near "bb": syntax error
+
+2018-01-14 23:34:54 del_db_info 执行失败，参数为:table=aa where=bb 

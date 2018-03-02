@@ -1,0 +1,188 @@
+2018-01-27 19:07:57 select DISTINCT(project_type) from timetask_totalprojects where project_name in ('CrmService')
+2018-01-27 19:09:07 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180127_service_Result.xls
+2018-01-27 19:09:23 select DISTINCT(project_type) from timetask_totalprojects where project_name in ('UserCenter_API','PromoCard','UserInfo')
+2018-01-27 19:09:34 select DISTINCT(project_type) from timetask_totalprojects where project_name in ('UserCenter_API','PromoCard','UserInfo')
+2018-01-27 19:09:59 get_case_datas处理失败，原因为：PromoCard／PromoCardSharding／createPromoCardsToDbV2接口的检查的数据有问题，请检查。 
+  详细报错信息：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 553, in get_case_datas
+    raise e
+ValueError: Expecting object: line 1 column 73 (char 72)
+ 
+2018-01-27 19:09:59 get_case_datas处理失败，原因为：PromoCard／PromoCardSharding／createPromoCardsToDbV2接口的检查的数据有问题，请检查。 
+  详细报错信息：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 553, in get_case_datas
+    raise e
+ValueError: Expecting object: line 1 column 73 (char 72)
+ 
+2018-01-27 19:10:00 update_result处理失败。原因为:Traceback (most recent call last):
+  File "AutoTestService/base/DBController.py", line 125, in exe_update
+    rows = self.cursor.execute(sql)
+  File "/Library/Python/2.7/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+IntegrityError: (1062, "Duplicate entry '97' for key 'PRIMARY'")
+
+2018-01-27 19:10:00 exe_update 执行失败，参数为:sql=insert into activity_info (`id`,`title`,`date_number`,`start_time`,`end_time`,`apply_start_time`,`apply_end_time`,`activity_document`,`activity_banner`,`allow_lottery_time`,`lottery_time`,`created_user`,`created_at`,`updated_user`,`updated_at`)values(97,'测试专场活动修改1',300,1515031200,1515549600,1515117600,1515290400,'好人傲人','add',1515463200,0,'luoranbin',1515997729,'luoranbin_update',1515997967) 
+2018-01-27 19:10:00 create_test_data处理失败，原因为：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 103, in create_test_data
+    db.exe_update(insert_sql)
+  File "AutoTestService/base/DBController.py", line 133, in exe_update
+    raise e
+IntegrityError: (1062, "Duplicate entry '97' for key 'PRIMARY'")
+
+2018-01-27 19:10:00 pre_options处理失败，原因为：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 854, in pre_options
+    create_test_data(str(db_info), str(db_name), str(table), str(file_path), str(create_data),str(delete_data))
+  File "AutoTestService/utility/Data.py", line 109, in create_test_data
+    raise e
+IntegrityError: (1062, "Duplicate entry '97' for key 'PRIMARY'")
+
+2018-01-27 19:10:07 update_result处理失败。原因为:Traceback (most recent call last):
+  File "AutoTestService/base/DBController.py", line 125, in exe_update
+    rows = self.cursor.execute(sql)
+  File "/Library/Python/2.7/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+IntegrityError: (1062, "Duplicate entry '2502' for key 'PRIMARY'")
+
+2018-01-27 19:10:07 exe_update 执行失败，参数为:sql=insert into promocard_cardno_map_63 (`id`,`sharding_id`,`card_no`)values(2502,200012000,'AAAAAAAAABCDXK') 
+2018-01-27 19:10:07 create_test_data处理失败，原因为：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 103, in create_test_data
+    db.exe_update(insert_sql)
+  File "AutoTestService/base/DBController.py", line 133, in exe_update
+    raise e
+IntegrityError: (1062, "Duplicate entry '2502' for key 'PRIMARY'")
+
+2018-01-27 19:10:07 pre_options处理失败，原因为：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 854, in pre_options
+    create_test_data(str(db_info), str(db_name), str(table), str(file_path), str(create_data),str(delete_data))
+  File "AutoTestService/utility/Data.py", line 109, in create_test_data
+    raise e
+IntegrityError: (1062, "Duplicate entry '2502' for key 'PRIMARY'")
+
+2018-01-27 19:10:14 update_result处理失败。原因为:Traceback (most recent call last):
+  File "AutoTestService/base/DBController.py", line 125, in exe_update
+    rows = self.cursor.execute(sql)
+  File "/Library/Python/2.7/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+IntegrityError: (1062, "Duplicate entry '1067' for key 'PRIMARY'")
+
+2018-01-27 19:10:14 exe_update 执行失败，参数为:sql=insert into promocards_0 (`id`,`sharding_id`,`scope_id`,`card_no`,`batch_no`,`type`,`effect_method`,`effect_params`,`minimal_order_amount`,`binded_uid`,`used_uid`,`used_order_id`,`used_time`,`status`,`enable_time`,`expire_time`,`current_usage`,`usage_limit`,`desc`,`retrieval_source`,`retrieval_source_ref_id`,`source_type`,`source_id`,`issue_time`,`updated_at`)values(1067,'6000','9527','SD2FSMGLVBRZTT','mobile_141028oppo_5-5','normal','rmb_off','5.00','5.00','6000','0','0','0','activated',1414339200,'1767196800','0','1','5元现金券','','0','','0','1414658840','0') 
+2018-01-27 19:10:14 create_test_data处理失败，原因为：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 103, in create_test_data
+    db.exe_update(insert_sql)
+  File "AutoTestService/base/DBController.py", line 133, in exe_update
+    raise e
+IntegrityError: (1062, "Duplicate entry '1067' for key 'PRIMARY'")
+
+2018-01-27 19:10:14 pre_options处理失败，原因为：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 854, in pre_options
+    create_test_data(str(db_info), str(db_name), str(table), str(file_path), str(create_data),str(delete_data))
+  File "AutoTestService/utility/Data.py", line 109, in create_test_data
+    raise e
+IntegrityError: (1062, "Duplicate entry '1067' for key 'PRIMARY'")
+
+2018-01-27 19:10:15 update_result处理失败。原因为:Traceback (most recent call last):
+  File "AutoTestService/base/DBController.py", line 125, in exe_update
+    rows = self.cursor.execute(sql)
+  File "/Library/Python/2.7/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+IntegrityError: (1062, "Duplicate entry '1250677' for key 'PRIMARY'")
+
+2018-01-27 19:10:15 exe_update 执行失败，参数为:sql=insert into tuanmei_user_wish_deals (`id`,`uid`,`hash_id`,`sku_no`,`sku_name`,`dateline`,`is_deleted`,`deal_start_time`,`site`,`platform`)values(1250677,2000044805,'ht170209p222551386t1','702916226','yellowandblue',1508929980,0,1504886400,'','pc') 
+2018-01-27 19:10:15 create_test_data处理失败，原因为：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 103, in create_test_data
+    db.exe_update(insert_sql)
+  File "AutoTestService/base/DBController.py", line 133, in exe_update
+    raise e
+IntegrityError: (1062, "Duplicate entry '1250677' for key 'PRIMARY'")
+
+2018-01-27 19:10:15 pre_options处理失败，原因为：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 854, in pre_options
+    create_test_data(str(db_info), str(db_name), str(table), str(file_path), str(create_data),str(delete_data))
+  File "AutoTestService/utility/Data.py", line 109, in create_test_data
+    raise e
+IntegrityError: (1062, "Duplicate entry '1250677' for key 'PRIMARY'")
+
+2018-01-27 19:10:15 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180127_service_Result.xls
+2018-01-27 19:10:15 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180127_service_Result.xls
+2018-01-27 19:10:34 111111
+
+2018-01-27 19:10:35 get_case_datas处理失败，原因为：PromoCard／PromoCardSharding／createPromoCardsToDbV2接口的检查的数据有问题，请检查。 
+  详细报错信息：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 553, in get_case_datas
+    raise e
+ValueError: Expecting object: line 1 column 73 (char 72)
+ 
+2018-01-27 19:10:47 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180127_service_Result.xls
+2018-01-27 19:10:47 2222
+
+2018-01-27 19:10:49 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180127_api_Result.xls
+2018-01-27 19:10:59 get_case_datas处理失败，原因为：PromoCard／PromoCardSharding／createPromoCardsToDbV2接口的检查的数据有问题，请检查。 
+  详细报错信息：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 553, in get_case_datas
+    raise e
+ValueError: Expecting object: line 1 column 73 (char 72)
+ 
+2018-01-27 19:10:59 get_case_datas处理失败，原因为：PromoCard／PromoCardSharding／createPromoCardsToDbV2接口的检查的数据有问题，请检查。 
+  详细报错信息：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 553, in get_case_datas
+    raise e
+ValueError: Expecting object: line 1 column 73 (char 72)
+ 
+2018-01-27 19:11:00 update_result处理失败。原因为:Traceback (most recent call last):
+  File "AutoTestService/base/DBController.py", line 125, in exe_update
+    rows = self.cursor.execute(sql)
+  File "/Library/Python/2.7/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+IntegrityError: (1062, "Duplicate entry '97' for key 'PRIMARY'")
+
+2018-01-27 19:11:00 exe_update 执行失败，参数为:sql=insert into activity_info (`id`,`title`,`date_number`,`start_time`,`end_time`,`apply_start_time`,`apply_end_time`,`activity_document`,`activity_banner`,`allow_lottery_time`,`lottery_time`,`created_user`,`created_at`,`updated_user`,`updated_at`)values(97,'测试专场活动修改1',300,1515031200,1515549600,1515117600,1515290400,'好人傲人','add',1515463200,0,'luoranbin',1515997729,'luoranbin_update',1515997967) 
+2018-01-27 19:11:00 create_test_data处理失败，原因为：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 103, in create_test_data
+    db.exe_update(insert_sql)
+  File "AutoTestService/base/DBController.py", line 133, in exe_update
+    raise e
+IntegrityError: (1062, "Duplicate entry '97' for key 'PRIMARY'")
+
+2018-01-27 19:11:00 pre_options处理失败，原因为：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 854, in pre_options
+    create_test_data(str(db_info), str(db_name), str(table), str(file_path), str(create_data),str(delete_data))
+  File "AutoTestService/utility/Data.py", line 109, in create_test_data
+    raise e
+IntegrityError: (1062, "Duplicate entry '97' for key 'PRIMARY'")
+
+2018-01-27 19:11:05 update_result处理失败。原因为:Traceback (most recent call last):
+  File "AutoTestService/base/DBController.py", line 125, in exe_update
+    rows = self.cursor.execute(sql)
+  File "/Library/Python/2.7/site-packages/MySQLdb/cursors.py", line 250, in execute
+    self.errorhandler(self, exc, value)
+  File "/Library/Python/2.7/site-packages/MySQLdb/connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+IntegrityError: (1062, "Duplicate entry '2502' for key 'PRIMARY'")
+
+2018-01-27 19:11:05 exe_update 执行失败，参数为:sql=insert into promocard_cardno_map_63 (`id`,`sharding_id`,`card_no`)values(2502,200012000,'AAAAAAAAABCDXK') 
+2018-01-27 19:11:05 create_test_data处理失败，原因为：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 103, in create_test_data
+    db.exe_update(insert_sql)
+  File "AutoTestService/base/DBController.py", line 133, in exe_update
+    raise e
+IntegrityError: (1062, "Duplicate entry '2502' for key 'PRIMARY'")
+
+2018-01-27 19:11:05 pre_options处理失败，原因为：Traceback (most recent call last):
+  File "AutoTestService/utility/Data.py", line 854, in pre_options
+    create_test_data(str(db_info), str(db_name), str(table), str(file_path), str(create_data),str(delete_data))
+  File "AutoTestService/utility/Data.py", line 109, in create_test_data
+    raise e
+IntegrityError: (1062, "Duplicate entry '2502' for key 'PRIMARY'")
+
+2018-01-27 19:11:13 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180127_service_Result.xls
+2018-01-27 19:11:14 执行成功，结果写入成功，地址为：/Users/luoranbin/soft/web/autoweb/media/result/20180127_service_Result.xls

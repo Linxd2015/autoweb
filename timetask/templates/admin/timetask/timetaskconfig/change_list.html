@@ -1,0 +1,205 @@
+{% extends "admin/base_site.html" %}
+{% block content %}
+    {% block object-tools %}
+        <div>
+         <a href="/admin/timetask/plantastconfig/add/" class="btn btn-success">
+                    <i class="icon-plus-sign icon-white"></i>&nbsp;
+                    增加 计划任务
+                  </a>
+        </div>
+<br>
+{% endblock %}
+
+<link rel="stylesheet" type="text/css" href="/media/css/sched.css">
+<div class="results">
+{#<table id ="result_list" class="table table-striped table-bordered table-hover table-condensed" >#}
+       <table width="100%" border="0" cellpadding="4" cellspacing="1" bgcolor="#cccccc" class="tabtop13" align="center" >
+           <tr>
+               <th  class="btbg font-center titfont" >任务名称</th>
+               <th  class="btbg font-center titfont" >执行方式</th>
+               <th  class="btbg font-center titfont" >执行配置</th>
+               <th  class="btbg font-center titfont" >下次执行时间</th>
+               <th  class="btbg font-center titfont" >状态</th>
+               <th  class="btbg font-center titfont" >操作</th>
+           </tr>
+           {% for foo in task %}
+               {% if foo.run %}
+                   <td class="font-center">{{ foo.name }}</td>
+               {% else %}
+                   <td class="font-center"><a href="/admin/timetask/plantastconfig/{{ foo.id }}/change">{{ foo.name }}</a></td>
+               {% endif %}
+               <td class="font-center">{{ foo.task_type }}</td>
+               {% if foo.task_type == "间隔固定分钟" %}
+                    <td class="font-center">{{ foo.plan_time }} 分钟</td>
+               {% elif foo.task_type == "间隔固定小时" %}
+                   <td class="font-center">{{ foo.plan_time }} 小时</td>
+               {% else %}
+                   <td class="font-center">{{ foo.plan_time }}</td>
+               {% endif %}
+               <td class="font-center">{{ foo.next_time }}</td>
+               <td class="font-center">
+               {% if foo.status == -1 and foo.run %}
+                   <img src="/media/img/icon-no.svg">已失效
+               {% elif foo.run %}
+                    <img src="/media/img/icon-yes.svg">运行中
+               {% else %}
+                   <img src="/media/img/icon-no.svg">已停止
+               {% endif %}
+               </td>
+               <td style="text-align: center;">
+                                    {% if foo.run %}
+{#                                        <li><a href="/CardPlan/PromoCardPlanDetail?id=902988" class="btn-danger">停止任务</a></li>#}
+                                        <button type="submit" id="stop_{{ foo.id }}" class="btn btn-danger stop-status"  onclick="stop_task(this)"> 停止任务 </button>
+                                        <button type="submit" id="del_{{ foo.id }}" class="btn btn-primary" onclick="del_task(this)"> 删除任务 </button>
+                                    {% else %}
+                                        <button type="submit" id="start_{{ foo.id }}" class="btn btn-success start-status" onclick="start_task(this)" > 开始任务 </button>
+                                        <button type="submit" id="del_{{ foo.id }}" class="btn btn-primary" onclick="del_task(this)"> 删除任务 </button>
+{#                                        <a href="/CardPlan/PromoCardPlanDetail?id=902988" class="btn-success">开始任务</a>#}
+{#                                        <li><button type="submit" id="id_end" class="btn btn-success stop-status"> 开始任务 </button></li>#}
+                                    {% endif %}
+{#                            <div class="btn-group">#}
+{#                                <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">#}
+{#                                    任务操作#}
+{#                                    <span class="caret"></span>#}
+{#                                </a>#}
+{#                                <ul class="dropdown-menu" style="width: 100px;">#}
+{#                                    <li><button type="submit" class="btn btn-success"> 开始任务 </button></li>#}
+{#                                    {% if foo.run %}#}
+{#                                        <li><a href="/CardPlan/PromoCardPlanDetail?id=902988" class="btn-danger">停止任务</a></li>#}
+{#                                        <li><button type="submit" id="id_end" class="btn btn-danger stop-status"> 停止任务 </button></li>#}
+{#                                    {% else %}#}
+{#                                        <li><a href="/CardPlan/PromoCardPlanDetail?id=902988" class="btn-success">开始任务</a></li>#}
+{#                                        <li><button type="submit" id="id_end" class="btn btn-success stop-status"> 开始任务 </button></li>#}
+{#                                    {% endif %}#}
+{##}
+{#                                    <li><a href="/CardPlan/PromoCardPlanDetail?id=902988" class="btn-delete">删除任务</a></li>#}
+{#                                                                        <!--<li class="divider"></li>#}
+{#                                <li><a href="/CardPlan/ForbidPromoCardPlan?id=">禁用</a></li>-->#}
+{#                                                                    </ul>#}
+{#                            </div>#}
+                        </td>
+           </tr>
+           {% endfor %}
+
+
+{#           <tr>#}
+{#               <td width="10%" class="font-center">ssssss</td>#}
+{#               <td width="10%" class="font-center">2017-10-11</td>#}
+{#               <td width="10%" class="font-center">#}
+{#                   <img src="/media/img/icon-yes.svg">#}
+{#               </td>#}
+{#               <td style="text-align: center;">#}
+{#                            <div class="btn-group">#}
+{#                                <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">#}
+{#                                    任务操作#}
+{#                                    <span class="caret"></span>#}
+{#                                </a>#}
+{#                                <ul class="dropdown-menu" style="width: 100px;">#}
+{#                                    <li><button type="submit" class="btn btn-success"> 开始任务 </button></li>#}
+{#                                     <li><button type="submit" id="id_end" class="btn btn-danger stop-status"> 停止任务 </button></li>#}
+{#                                    <li><a href="/CardPlan/PromoCardPlanDetail?id=902988">删除任务</a></li>#}
+{#                                                                        <!--<li class="divider"></li>#}
+{#                                <li><a href="/CardPlan/ForbidPromoCardPlan?id=">禁用</a></li>-->#}
+{#                                                                    </ul>#}
+{#                            </div>#}
+{#                        </td>#}
+{#           </tr>#}
+{#           <tr>#}
+{#               <td width="10%" id="id_ssssss" class="font-center">ssssss</td>#}
+{#               <td width="10%" class="font-center">2017-10-11</td>#}
+{#               <td width="10%" class="font-center">#}
+{#                   <img src="/media/img/icon-no.svg">#}
+{#               </td>#}
+{#                <td style="text-align: center;">#}
+{#                            <div class="btn-group">#}
+{#                                <a class="btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#">#}
+{#                                    任务操作#}
+{#                                    <span class="caret"></span>#}
+{#                                </a>#}
+{#                                <ul class="dropdown-menu" style="width: 100px;">#}
+{#                                    <li><button type="submit" class="btn btn-success"> 开始任务 </button></li>#}
+{#                                     <li><button type="submit" class="btn btn-success"> 开始任务 </button></li>#}
+{#                                    <li><a href="/CardPlan/PromoCardPlanDetail?id=902988">删除任务</a></li>#}
+{#                                                                        <!--<li class="divider"></li>#}
+{#                                <li><a href="/CardPlan/ForbidPromoCardPlan?id=">禁用</a></li>-->#}
+{#                                                                    </ul>#}
+{#                            </div>#}
+{#                        </td>#}
+{#           </tr>#}
+       </table>
+    </div>
+<script type="text/javascript" src="/media/js/django/jquery.init.js"></script>
+<script>
+    function start_task(obj) {
+        var task_id = obj.id.split('_')[1];
+        console.log(obj.id);
+        var url =  "/timetask/start_task/"+task_id;//能够正确的访问到view的url
+        django.jQuery.get(url,function (data) {
+{#            console.log(222);#}
+{#            document.execCommand('Refresh')#}
+            location.reload()
+        })
+    }
+    function stop_task(obj) {
+        var task_id = obj.id.split('_')[1];
+        console.log(obj.id);
+        var url =  "/timetask/stop_task/"+task_id;//能够正确的访问到view的url
+        django.jQuery.get(url,function (data) {
+{#            console.log(222);#}
+{#            document.execCommand('Refresh')#}
+            location.reload()
+        })
+    }
+    function del_task(obj) {
+        var task_id = obj.id.split('_')[1];
+        console.log(obj.id);
+        var url =  "/timetask/del_task/"+task_id;//能够正确的访问到view的url
+        django.jQuery.get(url,function (data) {
+{#            console.log(222);#}
+{#            document.execCommand('Refresh')#}
+            location.reload()
+        })
+    }
+    django.jQuery(function() {
+        var select = django.jQuery("#id_start");
+        var datas = django.jQuery("#id_start");
+        select.click(function(obj){
+            console.log(obj);
+            console.log(obj.toElement.innerText)
+            console.log(datas[0].id);
+            var url = "/timetask/start_task/"+datas[0].innerText;//能够正确的访问到view的url
+{#            console.log(url);#}
+            django.jQuery.get(
+                url,
+                function(data){
+                    console.log(222)
+{#                    var target = django.jQuery("#id_class_name");#}
+{#                    target.empty();//先要清空一下#}
+{#                    data.forEach(function(e){#}
+{#                        // 将从view得到的id和城市名称赋值给city的select#}
+{#                        console.log(e);#}
+{#                        target.append("<option value='"+e.id+"'>"+e.name+"</option>");#}
+{#                        target.eq(0).attr('selected', 'true');#}
+{#                        console.log(target);#}
+{#                    });#}
+            })
+        });
+
+    });
+{#    $(function(){#}
+{#        $('.stop-status').bind('click', function (e) {#}
+{#            e.preventDefault();#}
+{#            var url = "timetask/endtask";#}
+{#            console.log(url)#}
+{#            $.get({#}
+{#                url: url#}
+{#            }).success(function () {#}
+{#                console.log(111)#}
+{#            }).error(function () {#}
+{#                console.log(222)#}
+{#            });#}
+{#        });#}
+{##}
+{#    });#}
+</script>
+{% endblock %}

@@ -1,0 +1,68 @@
+{% extends "admin/base_site.html" %}
+{% block content %}
+<script src="/media/js/highcharts.js"></script>
+<script src="/media/js/modules/exporting.js"></script>
+
+<div id="chart" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+    <br>
+    {% if api_result_file != "" %}
+        api接口测试：<a href={{ api_result_file }}>api接口测试的结果快速下载通道>></a><br>
+    {% endif %}
+    {% if service_result_file != "" %}
+        service接口测试：<a href={{ service_result_file }}>service接口测试结果快速下载通道>></a><br>
+    {% endif %}
+
+		<script type="text/javascript">
+
+Highcharts.chart('chart', {
+    chart: {
+        type: 'column',
+    },
+    title: {
+        text: '自动化执行结果展示'
+    },
+    subtitle: {
+        text: 'Source: 柱状图'
+    },
+    xAxis: {
+        categories: {{ option.xAxis | safe }},
+        crosshair: true
+    },
+    yAxis: {
+        min: 0,
+        title: {
+            text: '用例数 (个)'
+        }
+    },
+    tooltip: {
+        headerFormat: '<span style="font-size:10px">{point.key}</span><table>',
+        pointFormat: '<tr><td style="color:{series.color};padding:0">{series.name}: </td>' +
+            '<td style="padding:0"><b>{point.y:1f} 个</b></td></tr>',
+        footerFormat: '</table>',
+        shared: true,
+        useHTML: true
+    },
+    plotOptions: {
+        column: {
+            pointPadding: 0.2,
+            borderWidth: 0,
+            dataLabels:{
+                enabled:true
+            }
+        }
+    },
+    series: [{
+        name: 'Pass',
+        data: {{ option.series_data.success | safe }},
+        color: 'green'
+
+    }, {
+        name: 'Failed',
+        data: {{ option.series_data.failed | safe }},
+        color: 'red'
+
+    }]
+});
+		</script>
+
+{% endblock %}
