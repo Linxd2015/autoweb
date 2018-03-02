@@ -84,28 +84,7 @@ def create_test_data(db_info, db_name, table_name, file_path,
     :param kwargs:
     :return:
     """
-    # project_path = Common.get_project_path()  # 获取当前项目地址
-    path = os.path.abspath(os.path.join(MEDIA_ROOT, file_path))  # 组装能够识别的文件path
-    db = DBController()
-    db.connect_mysql(db_info, db_name)
-    try:
-        if delete_sheet_name:
-            del_list = delete_sql(table_name, path, create_sheet_name, delete_sheet_name)
-            # 先进行数据清理操作
-            for del_sql in del_list:
-                db.exe_update(del_sql)
-        if create_sheet_name:
-            create_list = create_sql(table_name, path, create_sheet_name)
-            # # 然后进行数据插入
-            for insert_sql in create_list:
-                # print insert_sql
-                db.exe_update(insert_sql)
-        db.connect_close()
-        # print "前置操作执行成功"
-    except Exception,e:
-        db.connect_close()
-        LogController.write_log("create_test_data处理失败，原因为：%s" % traceback.format_exc())
-        raise e
+    print "省略"
 
 
 class PlanTask:
@@ -428,46 +407,7 @@ def write_chart_db(project='', class_name='', function_name='',chart_type='', is
     :param kwargs:
     :return:
     """
-    try:
-        # conn = sqlite3.connect(join_path(BASE_DIR, 'db.sqlite3'))
-        db = DBController()
-        db.connect_sqlite(join_path(BASE_DIR, 'db.sqlite3'))
-        # c = conn.cursor()
-        if is_clear:
-            sql = "delete from  chart_chartconfig"
-            db.exe_update(sql)
-            # c.execute(sql)
-        else:
-            result = db.exe_query("SELECT id, name,success,failed  from chart_chartconfig where name = '%s' and "
-                               "class_name ='%s' and function_name = '%s' and chart_type='%s'" %
-                               (project,class_name,function_name,chart_type))
-            if len(result)>0:
-                for row in result:
-                    success = row[2]
-                    failed = row[3]
-                    # print success,failed
-                    if is_success:
-                        if success > 0:
-                            success += 1
-                        else:success = 1
-                    else:
-                        if failed > 0:
-                            failed += 1
-                        else:failed = 1
-                    db.exe_update("update chart_chartconfig set success=%d,failed=%d where name = '%s' and "
-                               "class_name ='%s' and function_name = '%s' and chart_type='%s'" %
-                              (success,failed,project,class_name,function_name,chart_type))
-            else:
-                if is_success:
-                    db.exe_update("insert into chart_chartconfig(name,success,failed,class_name,function_name,chart_type) "
-                        "VALUES ('%s',%d,%d,'%s','%s','%s')" % (project,1,0,class_name,function_name,chart_type))
-                else:
-                    db.exe_update(
-                        "insert into chart_chartconfig(name,success,failed,class_name,function_name,chart_type) "
-                        "VALUES ('%s',%d,%d,'%s','%s','%s')" % (project, 0, 1,class_name,function_name,chart_type))
-        db.connect_close()
-    except Exception,e:
-        LogController.write_log("执行结果写入图表失败,because："+str(e.message))
+    print "省略"
 
 
 def get_sqlite_info(sql):
